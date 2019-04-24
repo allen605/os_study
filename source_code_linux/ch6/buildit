@@ -1,0 +1,9 @@
+#!/bin/sh
+# Build the chapter 5 example project
+
+gcc -c -o main.o src/main.c
+gcc -c -o app.o src/app.c
+gcc -c -o bar.o src/bar.c
+gcc -c -o lib.o src/lib.c
+gcc -o appexp main.o app.o bar.o lib.o
+

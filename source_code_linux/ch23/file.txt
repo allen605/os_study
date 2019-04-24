@@ -1,0 +1,6 @@
+This is a sample text string which is going to be used for sed testing.
+
+This is one more string that can be used.
+
+Finally, this is the last string in the test set.
+

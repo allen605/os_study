@@ -1,0 +1,22 @@
+VPATH= lib app
+
+LIBSRC= lib.c bar.c
+LIBOBJ= $(LIBSRC:.c=.o)
+    
+APPSRC= main.c app.c
+APPOBJ= $(APPSRC:.c=.o)
+
+CFLAGS=
+INCLUDES= -I ./lib
+
+all: libexp.a appex
+
+%.o:%.c
+	$(CC) -c $(CFLAGS) $(INCLUDES) -o $@ $<
+ 
+libexp.a: $(LIBOBJ)
+	$(AR) cru libexp.a $(LIBOBJ)
+ 
+appex: $(APPOBJ) libexp.a
+	$(CC) -o appex $(APPOBJ) -lexp -L .
+

@@ -1,0 +1,7 @@
+
+#define MY_SEM_ID	111
+
+#define MY_SEMARRAY_ID	112
+
+#define NUM_SEMAPHORES	10
+

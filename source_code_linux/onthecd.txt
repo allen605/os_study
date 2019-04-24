@@ -1,0 +1,168 @@
+On the CD-ROM
+
+The CD-ROM contains the example programs and scripts that are demonstrated
+in the text "GNU/Linux Application Programming."  The following identifies
+the contents of each of the subdirectories on this CD-ROM.
+
+
+System Requirements
+
+Sample applications on this CD-ROM will run on any Linux distribution that
+utilizes a 2.6 Linux kernel.  These applications were developed on the 
+Fedora and Ubuntu Linux distributions.
+
+
+Software by Chapter
+
+./software/ch6 ("Building Software with GNU/Make")
+
+This subdirectory contains sample Makefiles, ranging from simple to more
+complex (including variable manipulation and dependency tracking).
+
+
+./software/ch7 ("Building and Using Libraries")
+
+This subdirectory contains programs that illustrate the use of libraries
+on GNU/Linux.  Under ./software/ch7/statshrd are examples for static/shared
+libraries, and under ./software/ch7/dynamic are shared/dynamic libraries.
+
+
+./software/ch32 ("Coverage Testing with gcov")
+
+This subdirectory provides sample applications that are used to demonstrate
+the gcov GNU coverage analysis tool.
+
+
+./software/ch33 ("Profiling with gprof")
+
+This subdirectory provides sample applications that are used to illustrate
+the gprof GNU profiling tool.
+
+
+./software/ch8 ("Building packages with automake/autoconf")
+
+This subdirectory contains sample scripts to demonstrate the GNU automake
+and autoconf tools.
+
+
+./software/ch11 ("File Handling in GNU/Linux")
+
+This subdirectory contains sample applications that demonstrate the GNU/Linux
+file handling APIs.
+
+
+./software/ch12 ("Programming with Pipes")
+
+This subdirectory contains example applications for pipes programming.  In
+addition, a sample application that illustrates the dup system call is
+provided.
+
+
+./software/ch13 ("Introduction to Sockets Programming")
+
+Sample programs that demonstrate sockets programming are provided in this
+subdirectory.  In addition to C programs to explore client and server
+applications, a sample Ruby language server and Scheme language based
+client are provided.
+
+
+./software/ch14 ("GNU/Linux Process Model")
+
+Applications that demonstrate the variety of APIs and techniques for the
+standard GNU/Linux process model are provided in this subdirectory.  Sample
+applications demonstrate forking, raising and catching signals, POSIX signals,
+and others.
+
+
+./software/ch15 ("POSIX Threads Programming")
+
+In this subdirectory are sample applications that demonstrate POSIX threads
+programming.  Sample application include creation of threads, thread signals,
+joining threads, thread mutexes and thread-based condition variables.
+
+
+./software/ch16 ("IPC with Message Queues")
+
+The sample programs that demonstrate inter-process communication with
+message queues is provided in this subdirectory.  The programs demonstrate
+message queue creation, deletion, configuration, statistics collection,
+and reading and writing messages.
+
+
+./software/ch17 ("Synchronization with Semaphores")
+
+In this subdirectory, the sample programs that illustrate programming
+with semaphores are provided.  This includes programs that illustrate
+semaphore creation and deletion, acquisition and release, and others.
+
+
+./software/ch18 ("Shared Memory Programming")
+
+The varieties of sample programs that demonstrate shared memory programming
+are provided in this subdirectory.  This includes programs that illustrate
+shared memory region creation, deletion, configuration and process attach
+and detach.
+
+./software/ch19 ("Advanced File Handling")
+
+This subdirectory contains a number of example programs for advanced file
+techniques including filesystem event monitoring, file typing, filesystem
+enumeration, and others.
+
+
+./software/ch20 ("Other Application Development Topics")
+
+This subdirectory contains a variety of demonstration programs that illustrate
+a number of application development topics (from command-line argument
+parsing, to the use of time functions, to physical memory mapping).
+
+
+./software/ch21 ("Standard GNU/Linux Commands")
+
+The sample scripts and data files used to demonstrate the most useful
+GNU/Linux commands are provided in this subdirectory.
+
+
+./software/ch22 ("Bourne Again Shell (bash)")
+
+This subdirectory contains a number of sample bash scripts that illustrate
+a wide variety of constructs within the bash scripting language.
+
+
+./software/ch23 ("Editing with Sed")
+
+This subdirectory contains sample Sed scripts and sample data files used by 
+the scripts.
+
+
+./software/ch24 ("Text Processing with Awk")
+
+This subdirectory contains a number of sample Awk scripts and sample data
+files used by the scripts.
+
+
+./software/ch25 ("Building Parsers with Flex and Bison")
+
+In this subdirectory, the sample lexer and grammar files are provided for 
+three different sample applications.  The first simple example, under 
+./ch25/simple, is the first example of a flex lexer file.  The second 
+example, ./ch25/setexample, illustrates the consolidation of both the 
+lexer and grammar files into a single application.  Finally, under 
+./ch25/config, is a slightly more complex example of a configuration file 
+parser.
+
+
+./software/ch29 ("Software Testing Tools")
+
+Four methods of software testing are covered in this subdirectory.  A 
+"build-your-own" approach is covered in ./ch29/byo, the C-Unit test system 
+is covered in ./ch29/cut, the Embedded Unit Test framework in ./ch29/emb,
+and finally a script that utilizes expect to provide high-level black-box
+testing in ./ch29/expect.
+
+
+./software/ch30 ("Using GDB")
+
+The sample application used to demonstrate the GNU debugger is found in 
+this subdirectory.
+

@@ -1,0 +1,27 @@
+ 
+SRC_FILES=main.c app.c bar.c lib.c
+OBJ_FILES=$(patsubst %.c, %.o, ${SRC_FILES})
+
+VPATH = src
+
+CFLAGS  = -c -g 
+LDFLAGS = -g
+
+appexp: ${OBJ_FILES}
+	gcc ${LDFLAGS} -o appexp ${OBJ_FILES}
+
+%.o:%.c
+	gcc ${CFLAGS} -o $@ $<
+
+clean:
+	rm *.o appexp
+
+MAIN_HDRS=lib.h app.h
+LIB_HDRS=lib.h
+
+main.o : $(addprefix src/, ${MAIN_HDRS})
+app.o : $(addprefix src/, ${MAIN_HDRS})
+bar.o : $(addprefix src/, ${LIB_HDRS})
+lib.o : $(addprefix src/, ${LIB_HDRS})
+
+

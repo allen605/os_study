@@ -1,0 +1,13 @@
+allow {
+
+  mtj@mtjones.com
+  dan_4522@yahoo.com
+
+}
+
+disallow {
+
+  you@yahoo.com
+  them@excite.com
+}
+

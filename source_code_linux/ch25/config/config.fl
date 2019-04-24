@@ -1,0 +1,17 @@
+%{
+#include <stdio.h>
+
+#include "config.tab.h"
+%}
+
+%%
+allow			return ALLOW;
+disallow		return DISALLOW;
+[a-zA-Z]+[a-zA-Z0-9_]*	yylval=strdup(yytext); return WORD;
+\{			return OPEN_BRACE;
+\}			return CLOSE_BRACE;
+\@			return ATSYM;
+\.			return PERIODSYM;
+\n			/* Ignore end-of-line */
+[ \t]+			/* Ignore whitespace  */
+%%

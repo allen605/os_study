@@ -1,0 +1,34 @@
+#!/usr/local/bin/expect -f
+
+set timeout 1
+
+proc sendexpect { out in } {
+  send $out
+  expect {
+    $in		{ puts "passed\n" }
+    timeout	{ puts "***failed\n" ; exit }
+  }
+}
+
+# Start the bc test
+spawn bc
+expect "warranty"
+
+puts "Test Starting\n"
+
+# Test some simple math
+sendexpect "2+4\n" "6"
+sendexpect "2*8\n" "16"
+sendexpect "9-2\n" "7"
+
+# Test a simple function 
+sendexpect \
+  "define f (x) { if (x<=1) return(1); return(f(x-1) * x); }\n" "\r"
+sendexpect "f(5)\n" "120"
+
+# End the test session
+sendexpect "quit\n" eof 
+
+puts "Test Complete\n"
+
+exit

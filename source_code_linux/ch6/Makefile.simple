@@ -1,0 +1,15 @@
+appexp: main.o app.o bar.o lib.o
+	gcc -o appexp main.o app.o bar.o lib.o
+
+main.o : src/main.c src/lib.h src/app.h
+	gcc -c -o main.o src/main.c
+
+app.o : src/app.c src/lib.h src/app.h
+	gcc -c -o app.o src/app.c
+
+bar.o : src/bar.c src/lib.h
+	gcc -c -o bar.o src/bar.c
+
+lib.o : src/lib.c src/lib.h
+	gcc -c -o lib.o src/lib.c  
+

@@ -1,0 +1,6 @@
+
+MY_VAR=file1.c file2.c
+
+all:
+	echo ${MY_VAR}
+
