@@ -1,0 +1,7 @@
+#!/bin/sh
+fact=1
+for a in `seq 1 8`
+do
+fact=`expr $fact\* $a`
+done
+echo "8! = $fact"

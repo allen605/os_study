@@ -1,0 +1,30 @@
+#Select one of the opertors
+#! /bin/bash
+echo "This is a simple calculator!" 
+while true 
+do
+echo "Select one of the opertors" 
+echo "a)=+ s)=- m)=* d)=/ q)=quit" 
+read op
+case $op in
+a) op="+" ;;
+s) op="-" ;;
+m) op="mul" ;;
+d) op="/" ;;
+q|Q) op="q" exit ;;
+*) echo "wrong option,input again..." ; sleep 1
+continue ;;
+esac
+echo -n "please enter two numbers:"
+read n1 n2
+if [ $op = "mul" ]; then
+expr $n1 \* $n2
+else
+expr $n1 $op $n2
+fi
+echo -n "continue (y/n)? " 
+read answer
+case $answer in [Nn]*) break;;
+esac
+done
+echo ¡°goodbye!¡±
